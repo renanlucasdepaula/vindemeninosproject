@@ -1,5 +1,19 @@
+/* *{} define todo o documento html */
+*{
+    /* Essa configração é um "reset" no código,
+    *  para que não conflite com margin/padding de frameworks,
+    *  como o bootstrap
+    */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: dodgerblue;
+    /* O !important força o estilo a sobrepor tudo mais que 
+    *  tiver relacionado a esse elemento, use com moderação
+    *  Nesse caso foi necessario pois o bootstrap coloca bg branco    
+    */
+    background-color: dodgerblue!important;
 }
 label{
     font-family: Arial, Helvetica, sans-serif;
@@ -8,6 +22,7 @@ label{
     color: azure;
 }
 input{
+    
     box-shadow: 2px;
     background-origin: padding-box;
 }
