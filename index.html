@@ -50,43 +50,73 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-          <label>Nome:</label>
-          <input type="text" id="nome" name="nome" placeholder="Nome" data-toggle="popover" data-placement="right" data-content="nome"/>  
-          
-          <label class="dtnasc">Data de Nascimento:</label>
-          <input type="date" id="dtnasc" name="dtnasc" />
-          
-          <label>Nacionalidade:</label>
-          <input type="text" id="nome" name="nome" placeholder="Nacionalidade"/>       
-      
-          <label>Endereço:</label>
-          <input type="text" id="nome" name="nome" placeholder="Endereço"/>      
-      
-          <label>Bairro:</label> 
-          <input type="text" id="nome" name="nome" placeholder="Bairro" />     
-      
-          <label>Cidade:</label> 
-          <input type="text" id="nome" name="nome" placeholder="Cidade"/>      
-      
-          <label>Telefone:</label> 
-          <input type="text" id="nome" name="nome" placeholder="Telefone"/>      
-      
-          <label>e-mail:</label>           
-          <input type="text" id="nome" name="nome" placeholder="e-mail"/>
-      
-          <label>Nome do Pai:</label> 
-          <input type="text" id="nome" name="nome" placeholder="Nome do pai"/>      
-      
-          <label>Nome da Mãe:</label> 
-          <input type="text" id="nome" name="nome" placeholder="Nome da mãe"/>      
-      
-          <label>Profissão do Pai:</label> 
-          <input type="text" id="nome" name="nome" placeholder="Profissão do pai"/>       
-      
-          <label>Profissão da Mãe: </label> 
-          <input type="text" id="nome" name="nome" value=""placeholder="Profissão da mãe" />      
-      
+        <!-- Adicionei a classe container do bootstrap para que pegue margin e padding automaticos -->
+        <div class="modal-body container">
+          <div class="infoPessoal">
+            <!-- quando se usa container, o ideal é usar row para os elementos dentro dele, pois tambem
+                 configura o posicionamento. Nesse caso deixa em linha os elementos dentro dela. Cada row == uma linha
+            -->
+            <div class="row">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="Nome" data-toggle="popover" data-placement="right" data-content="nome"/>  
+            </div>
+
+            <div class="row">
+              <label class="dtnasc" for="dtnasc">Data de Nascimento:</label>
+              <input type="date" id="dtnasc" name="dtnasc" />
+            </div>
+
+            <div class="row">
+              <label for="nacional">Nacionalidade:</label>
+              <input type="text" id="nacional" name="nacional" placeholder="Nacionalidade"/>   
+            </div>
+
+            <div class="row">
+              <label for="endereco">Endereço:</label>
+              <input type="text" id="endereco" name="endereco" placeholder="Endereço"/> 
+            </div>
+
+            <div class="row">
+              <label for="bairro">Bairro:</label> 
+              <input type="text" id="bairro" name="bairro" placeholder="Bairro" />  
+            </div>
+
+            <div class="row">
+              <label for="cidade">Cidade:</label> 
+              <input type="text" id="cidade" name="cidade" placeholder="Cidade"/> 
+            </div>
+
+            <div class="row">
+              <label for="tel">Telefone:</label> 
+              <input type="tel" id="tel" name="tel" placeholder="Telefone"/>
+            </div>
+
+            <div class="row">
+              <label for="email">E-mail:</label>           
+              <input type="email" id="email" name="email" placeholder="e-mail"/>
+            </div>
+
+            <div class="row">
+              <label for="nPai">Nome do Pai:</label> 
+              <input type="text" id="nPai" name="nPai" placeholder="Nome do pai"/>
+            </div>
+
+            <div class="row">
+              <label for="nMae">Nome da Mãe:</label> 
+              <input type="text" id="nMae" name="nMae" placeholder="Nome da mãe"/>   
+            </div>
+
+            <div class="row">
+              <label for="pPai">Profissão do Pai:</label> 
+              <input type="text" id="pPai" name="pPai" placeholder="Profissão do pai"/>   
+            </div>
+
+            <div class="row">
+              <label for="pMae">Profissão da Mãe: </label> 
+              <input type="text" id="pMae" name="pMae" value=""placeholder="Profissão da mãe" />
+            </div>  
+
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

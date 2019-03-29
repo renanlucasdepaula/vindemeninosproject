@@ -15,19 +15,34 @@ body{
     */
     background-color: dodgerblue!important;
 }
-label{
-    font-family: Arial, Helvetica, sans-serif;
-    float: left;
-    margin-left: 5px;
-    color: azure;
+.infoPessoal{
+    /* Famoso flexbox */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
-input{
-    
-    box-shadow: 2px;
-    background-origin: padding-box;
+.infoPessoal input{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border: 1px solid #0b49965c;
+    border-radius: 5px;
+    margin: auto 0;
+    width: 50%;
+    padding: 0px 5px;
 }
-.dtnasc{    
+.infoPessoal label{
+    font-family: Arial, Helvetica, sans-serif;    
+    color: #15569a;
+    margin: 10px 0;
 }
+
+.infoPessoal .row{
+    /* Alguns ajustes na row para estilizar os elementos */
+    width: 100%;
+    /* row por padrão vem com display flex, então só usei uma propriedade para alinhar os elementos dentro dela */
+    justify-content: space-between;
+}
+/* .dtnasc{    
+} */
 .titulo{
     padding: 1px;
     text-align: center;
