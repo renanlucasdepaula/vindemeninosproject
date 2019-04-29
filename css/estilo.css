@@ -1,6 +1,7 @@
 /* *{} define todo o documento html */
-*{
-    /* Essa configração é um "reset" no código,
+
+* {
+    /* Essa configuração é um "reset" no código,
     *  para que não conflite com margin/padding de frameworks,
     *  como o bootstrap
     */
@@ -8,45 +9,73 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     /* O !important força o estilo a sobrepor tudo mais que 
     *  tiver relacionado a esse elemento, use com moderação
     *  Nesse caso foi necessario pois o bootstrap coloca bg branco    
     */
-    background-color: dodgerblue!important;
+    background-color: #FFFFFF!important;
 }
-.infoPessoal{
+
+.infoPessoal {
     /* Famoso flexbox */
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-.infoPessoal input{
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+.infoPessoal input {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid #0b49965c;
     border-radius: 5px;
     margin: auto 0;
     width: 50%;
     padding: 0px 5px;
 }
-.infoPessoal label{
-    font-family: Arial, Helvetica, sans-serif;    
+
+.infoPessoal label {
+    font-family: Arial, Helvetica, sans-serif;
     color: #15569a;
     margin: 10px 0;
 }
 
-.infoPessoal .row{
+.infoPessoal .row {
     /* Alguns ajustes na row para estilizar os elementos */
-    width: 100%;
+    width: 90%;
     /* row por padrão vem com display flex, então só usei uma propriedade para alinhar os elementos dentro dela */
     justify-content: space-between;
 }
+
+
 /* .dtnasc{    
 } */
-.titulo{
+
+.titulo {
     padding: 1px;
     text-align: center;
     background-color: cyan;
     border-radius: 10%;
 }
 
+.titulo-principal {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.logo {
+    float: left;
+}
+
+header {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #15569a;
+}
+
+.btn-success {
+    float-left;
+}
