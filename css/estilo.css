@@ -18,6 +18,33 @@ body {
     background-color: #FFFFFF!important;
 }
 
+/* HEADER */
+header {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #15569a;
+    height: 150px;
+}
+header div{
+    margin: 0 5px;
+}
+header .titulo-principal {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+/* MAIN SECTION */
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+/* Modais */
 .infoPessoal {
     /* Famoso flexbox */
     display: flex;
@@ -47,36 +74,28 @@ body {
     justify-content: space-between;
 }
 
-
-/* .dtnasc{    
-} */
-
-.titulo {
-    padding: 1px;
-    text-align: center;
-    background-color: cyan;
-    border-radius: 10%;
-}
-
-.titulo-principal {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-}
-
-.logo {
-    float: left;
-}
-
-header {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    background-color: #15569a;
-}
-
 .modal-footer{
     flex-direction: row-reverse !important;
     justify-content: space-between !important;
 }
+@media (max-width: 768px){
+    .content{
+        flex-direction: column ;
+        align-items: normal;
+    }
+    .content button{
+        margin: 20px 0; 
+        height: 10vh;
+    }
+
+    header .titulo-principal h1{
+        font-size: 2rem;
+    }
+    #slider-mobile .carousel-item a img{
+        width: 100%;
+    }
+}
+
+
+
+
